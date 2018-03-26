@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_color_Green">#008B8B</color>
+    <color name="theme_color_slateGrey">#222222</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorGrey">#353F40</color>
+    <color name="background_color">#ffbebebe</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent_black">#66000000</color>
+    <color name="snow_white">#f8f8fa</color>
+    <color name="status_green">#AFB42B</color>
+    <color name="status_yellow">#FBC02D</color>
+
+    <color name="text_color">#222222</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="colorGolden">#FFAC02</color>
+    <color name="enabled_color">#000000</color>
+    <color name="disabled_color">#000000</color>
+
+    <color name="color_pieChart_blue">#03A9F4</color>
+    <color name="color_pieChart_green">#CDDC39</color>
+
+
+
+    <array name="companyStatusColors">
+        <item>@color/red</item>
+        <item>@color/theme_color_Green</item>
+    </array>
+
+    <array name="notifyColors">
+        <item>@color/colorPrimary</item>
+        <item>@color/colorAccent</item>
+        <item>@color/transparent_black</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/status_green</item>
+    </array>
+
+    <array name="overviewPieChartColors">
+        <item>@color/color_pieChart_green</item>
+        <item>@color/color_pieChart_blue</item>
+    </array>
+
+    <color name="listViewBackColor">#EEEEEE</color>
+
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>0</resources>
+
+
+
+

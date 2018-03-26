@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.solutions.roartek.placeme">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:icon="@drawable/placeme_icon"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.Activity_Logo"
+            android:noHistory="true"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activity.Activity_CollegeCode"
+            android:label="@string/activity_title_college_code"
+            android:noHistory="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity
+            android:name=".Activity.Activity_Login"
+            android:label="@string/activity_title_login"
+            android:noHistory="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".Activity.Activity_Home"
+            android:label="@string/activity_title_home"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/homedialog_img_home"
+            android:enabled="true"
+            />
+        <activity
+            android:name=".Activity.Activity_RegisterCompany"
+            android:label="@string/activity_title_register"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName=".Activity.Activity_Home"/>
+        <activity
+            android:name=".Activity.Activity_ViewCompany"
+            android:label="@string/activity_title_viewCompany"
+            android:parentActivityName=".Activity.Activity_Home"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".Activity.Activity_ShortlistStudents"
+            android:label="@string/activity_title_shortlist_students"
+            android:parentActivityName=".Activity.Activity_Home"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".Activity.Activity_PlacedDetails"
+            android:label="@string/activity_title_placed_details"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+
+        <activity
+            android:name=".Activity.Activity_Notifications"
+            android:label="@string/activity_title_notifications"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName=".Activity.Activity_Home"/>
+
+        <activity
+            android:name=".Activity.Activity_UserAccount"
+            android:label="@string/activity_title_my_account"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName=".Activity.Activity_Home"
+            android:noHistory="true"/>
+        <activity
+            android:name=".Activity.Activity_AppConfigure"
+            android:label="@string/activity_title_app_configuration"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName=".Activity.Activity_Home"
+            android:noHistory="true"/>
+
+        <activity
+            android:name=".Activity.Activity_Statistics"
+            android:label="@string/activity_title_statistics"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName=".Activity.Activity_Home"/>
+
+        <activity
+            android:name=".Activity.Activity_NotifyMsg"
+            android:label="@string/activity_title_notify"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+
+        <activity
+            android:name=".Activity.Activity_Detailed_Notifications"
+            android:label="Notification Details"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <activity android:name=".Activity.Activity_Menu"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+</application>
+
+</manifest>

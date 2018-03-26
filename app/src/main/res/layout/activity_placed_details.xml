@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/color_pieChart_blue">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#33ffffff"
+                android:id="@+id/placedDetails_spinner_select_branch"
+                android:spinnerMode="dropdown"
+              >
+            </Spinner>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/student_count_img"
+                android:tint="@color/theme_color_slateGrey"
+                android:id="@+id/placedDetails_img_student_count"
+                android:layout_below="@id/placedDetails_spinner_select_branch"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/placedDetails_txt_count"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:layout_alignLeft="@id/placedDetails_img_student_count"
+                android:layout_alignTop="@id/placedDetails_img_student_count"
+                android:layout_alignRight="@id/placedDetails_img_student_count"
+                android:layout_alignBottom="@id/placedDetails_img_student_count"
+                android:layout_margin="1dp"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/students"
+                android:text="@string/students"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:layout_toRightOf="@id/placedDetails_img_student_count"
+                android:layout_alignBottom="@id/placedDetails_img_student_count"
+                android:layout_alignTop="@id/placedDetails_img_student_count"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/theme_color_slateGrey"
+                android:layout_below="@id/placedDetails_img_student_count"
+                android:layout_marginTop="8dp">
+
+            </View>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_company"
+                android:layout_weight="1"
+                android:layout_marginTop="16dp"
+                android:textSize="12sp"
+                android:textColor="@color/theme_color_Green"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                android:id="@+id/placedDetails_spinner_select_company"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/theme_color_slateGrey">
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*No companies to choose from"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:textColor="@color/red"
+                android:id="@+id/placedDetails_txt_spinnerError"
+                android:visibility="gone"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/placedDetails_wrapper_venue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/placedDetails_hint_Venue"
+                android:fontFamily="sans-serif">
+                <EditText
+                    android:id="@+id/placedDetails_inp_venue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/placedDetails_hint_Venue"
+                    android:singleLine="true"
+                    android:padding="26dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/theme_color_slateGrey"
+                    android:inputType="textCapWords"/>
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/placedDetails_wrapper_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/date"
+                android:fontFamily="sans-serif">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/placedDetails_date"
+                    android:hint="@string/date"
+                    android:padding="20dp"
+                    android:fontFamily="sans-serif"
+                    android:enabled="false"
+                    android:textColor="@color/theme_color_slateGrey"
+                   />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_dor"
+                android:tint="@color/theme_color_Green"
+                android:padding="20dp"
+                android:id="@+id/placedDetails_img_date"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/placedDetails_wrapper_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/time"
+                android:fontFamily="sans-serif">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/placedDetails_time"
+                    android:hint="@string/time"
+                    android:padding="20dp"
+                    android:fontFamily="sans-serif"
+                    android:enabled="false"
+                    android:textColor="@color/theme_color_slateGrey"
+                   />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_time"
+                android:padding="20dp"
+                android:tint="@color/theme_color_Green"
+                android:id="@+id/placedDetails_img_time"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

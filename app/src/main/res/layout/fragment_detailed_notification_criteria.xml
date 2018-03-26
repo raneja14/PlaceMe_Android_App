@@ -1,0 +1,240 @@
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:id="@+id/frag_criteria_container">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/detailedNotificationCard_criteria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            card_view:cardBackgroundColor="@color/theme_color_Green"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/listViewBackColor">
+
+
+                <TextView
+                    android:id="@+id/detailedNotification_label_criteria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/theme_color_Green"
+                    android:padding="14dp"
+                    android:text="CRITERIA"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/detailedNotification_cgpa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/detailedNotification_label_criteria"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="Cgpa"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/detailedNotification_txt_cgpa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/detailedNotification_label_criteria"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="7.8"
+                    android:textColor="@color/theme_color_slateGrey"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/detailedNotification_arrears"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/detailedNotification_cgpa"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="Arrears"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/detailedNotification_txt_arrears"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/detailedNotification_cgpa"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="2"
+                    android:textColor="@color/theme_color_slateGrey"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/detailedNotification_xPer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/detailedNotification_arrears"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="X %"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/detailedNotification_txt_xPer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/detailedNotification_arrears"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="92"
+                    android:textColor="@color/theme_color_slateGrey"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/detailedNotification_xiiPer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/detailedNotification_xPer"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="XII %"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/detailedNotification_txt_xiiPer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/detailedNotification_xPer"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="92"
+                    android:textColor="@color/theme_color_slateGrey"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/detailedNotification_placed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/detailedNotification_xiiPer"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="Placed"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/detailedNotification_txt_placed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/detailedNotification_xiiPer"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="Consider"
+                    android:textColor="@color/theme_color_slateGrey"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/detailedNotification_diploma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/detailedNotification_placed"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="Diploma"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/detailedNotification_txt_diploma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/detailedNotification_placed"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="Ignore"
+                    android:textColor="@color/theme_color_slateGrey"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/detailedNotification_branch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/detailedNotification_diploma"
+                    android:layout_marginRight="60dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="Branch"
+                    android:textSize="20sp" />
+
+                <HorizontalScrollView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/detailedNotification_diploma"
+                    android:layout_toRightOf="@id/detailedNotification_branch"
+                    >
+                    <TextView
+                        android:id="@+id/detailedNotification_txt_branch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="14dp"
+                        android:text="SWE,EEE,ECE,MECH,ECE,"
+                        android:textColor="@color/theme_color_slateGrey"
+                        android:textSize="16sp" />
+
+                    <!--  android:marqueeRepeatLimit ="marquee_forever"
+                      android:focusable="true"
+                      android:focusableInTouchMode="true"
+                      android:ellipsize="marquee"
+                      android:singleLine="true"
+                      android:scrollHorizontally="true"
+-->
+
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

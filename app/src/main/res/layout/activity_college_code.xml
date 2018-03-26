@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/college_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/gradient_edit_text"
+        android:drawableLeft="@drawable/college_code"
+        android:fontFamily="sans-serif"
+        android:hint="@string/college_code"
+        android:inputType="textCapCharacters"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/theme_color_slateGrey" />
+
+    <TextView
+        android:id="@+id/collegeCode_txt_blank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/college_code"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="48dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/errorMsg_blank_field"
+        android:textColor="@color/red"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:visibility="gone" />
+</RelativeLayout>

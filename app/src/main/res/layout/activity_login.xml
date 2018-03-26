@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/gradient_edit_text"
+                android:drawableLeft="@drawable/user_id"
+                android:fontFamily="sans-serif"
+                android:hint="@string/user_id"
+                android:inputType="phone"
+                android:maxLength="4"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/theme_color_slateGrey" />
+
+            <TextView
+                android:id="@+id/login_txt_blank_userID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/errorMsg_blank_field"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/gradient_edit_text"
+                android:drawableLeft="@drawable/password"
+                android:fontFamily="sans-serif"
+                android:hint="@string/password"
+                android:maxLength="15"
+                android:padding="6dp"
+                android:password="true"
+                android:singleLine="true"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/theme_color_slateGrey" />
+
+            <TextView
+                android:id="@+id/login_txt_blank_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/errorMsg_blank_field"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:id="@+id/frag_details_container"
+        >
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/detailedNotificationCard_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            card_view:cardBackgroundColor="@color/color_pieChart_blue"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/listViewBackColor">
+
+
+                <TextView
+                    android:id="@+id/detailedNotification_label_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_pieChart_blue"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="DETAILS"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/detailedNotification_eligible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/detailedNotification_label_details"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="Eligible"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/detailedNotification_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/detailedNotification_eligible"
+                    android:layout_marginRight="50dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="Company"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/detailedNotification_txt_eligible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/detailedNotification_label_details"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="3 students"
+                    android:textColor="@color/theme_color_slateGrey"
+                    android:textSize="18sp" />
+
+
+                <HorizontalScrollView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/detailedNotification_eligible"
+                    android:layout_toRightOf="@id/detailedNotification_company"
+                    >
+                    <TextView
+                        android:id="@+id/detailedNotification_txt_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:padding="14dp"
+                        android:text="THOMSON REUTERS"
+                        android:textColor="@color/theme_color_slateGrey"
+                        android:textSize="18sp"
+                        android:layout_gravity="end"/>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/detailedNotification_venue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/detailedNotification_company"
+                    android:layout_marginRight="70dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="Venue"
+                    android:textSize="20sp" />
+
+                <HorizontalScrollView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/detailedNotification_company"
+                    android:layout_toRightOf="@id/detailedNotification_company"
+
+                    >
+                    <TextView
+                        android:id="@+id/detailedNotification_txt_venue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:padding="14dp"
+                        android:text="T.P.Ganesan Auditorium"
+                        android:textColor="@color/theme_color_slateGrey"
+                        android:textSize="18sp"
+                        android:layout_gravity="end"/>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/detailedNotification_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/detailedNotification_venue"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="Date"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/detailedNotification_txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/detailedNotification_venue"
+                    android:layout_marginRight="16dp"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="20 Dec,16"
+                    android:textColor="@color/theme_color_slateGrey"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/detailedNotification_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/detailedNotification_date"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="Time"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/detailedNotification_txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/detailedNotification_date"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="14dp"
+                    android:text="10.30 am"
+                    android:textColor="@color/theme_color_slateGrey"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>

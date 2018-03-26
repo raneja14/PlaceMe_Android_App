@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="#222222"
+    android:clipToPadding="true"
+    android:id="@+id/container_dialog_home">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/homedialog_img_home"
+        android:id="@+id/home_dialogImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_txt_home"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textSize="12sp"
+        android:id="@+id/home_dialogText"
+        android:layout_below="@id/home_dialogImage"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/snow_white"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/homedialog_img_notification"
+        android:id="@+id/notification_dialogImage"
+        android:layout_below="@id/home_dialogImage"
+        android:layout_toLeftOf="@id/home_dialogText"
+        android:paddingRight="48dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notification"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:layout_below="@id/notification_dialogImage"
+        android:id="@+id/notification_dialogText"
+        android:layout_toLeftOf="@id/home_dialogText"
+        android:paddingRight="32dp"
+        android:textColor="@color/snow_white" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/homedialog_img_app_configure"
+        android:id="@+id/appConfigure_dialogImage"
+        android:layout_below="@id/notification_dialogText"
+        android:layout_toLeftOf="@id/home_dialogText"
+        android:paddingRight="48dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_txt_app_configuration"
+        android:textAlignment="center"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:textSize="12sp"
+        android:id="@+id/appConfigure_dialogText"
+        android:layout_below="@id/appConfigure_dialogImage"
+        android:layout_toLeftOf="@id/home_dialogText"
+        android:paddingRight="40dp"
+        android:textColor="@color/snow_white"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile"
+        android:id="@+id/userProfile_dialogImage"
+        android:layout_below="@id/home_dialogImage"
+        android:layout_toRightOf="@id/home_dialogText"
+        android:paddingLeft="48dp"
+      />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_profile"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:id="@+id/userProfile_dialogText"
+        android:layout_below="@id/userProfile_dialogImage"
+        android:layout_toRightOf="@id/home_dialogText"
+        android:paddingLeft="42dp"
+        android:textColor="@color/snow_white"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/homedialog_img_change_password"
+        android:id="@+id/changePassword_dialogImage"
+        android:layout_toRightOf="@id/home_dialogText"
+        android:paddingLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/userProfile_dialogText"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textAlignment="center"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:id="@+id/changePassword_dialogText"
+        android:layout_toRightOf="@id/home_dialogText"
+        android:paddingLeft="42dp"
+        android:layout_below="@id/changePassword_dialogImage"
+        android:textColor="@color/snow_white" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/homdialog_img_logout"
+        android:id="@+id/logout_dialogImage"
+        android:layout_below="@id/appConfigure_dialogImage"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:id="@+id/logout_dialogText"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logout_dialogImage"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/snow_white" />
+
+
+</RelativeLayout>

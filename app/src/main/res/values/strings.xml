@@ -1,0 +1,113 @@
+<resources>
+
+    <string name="app_name">PlaceME</string>
+
+    //Activity Titles
+    <string name="title_activity_main">MainActivity</string>
+    <string name="activity_title_college_code">COLLEGE CODE</string>
+    <string name="activity_title_login">LOGIN</string>
+    <string name="activity_title_home">HOME</string>
+    <string name="activity_title_register">Register</string>
+    <string name="activity_title_viewCompany">View Company</string>
+    <string name="activity_title_shortlist_students">Shortlist Students</string>
+    <string name="activity_title_placed_details">Details</string>
+    <string name="activity_title_notifications">Notifications</string>
+    <string name="activity_title_my_account">My Account</string>
+    <string name="activity_title_app_configuration">App Configuration</string>
+    <string name="activity_title_statistics">Statistics</string>
+    <string name="activity_title_notify">Notify</string>
+
+    <string name="user_id"> User Id</string>
+    <string name="hint_typeOfRec">Type</string>
+    <string name="college_code">College code</string>
+    <string name="placedDetails_hint_Venue">Venue</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="OTP">OTP</string>
+    <string name="companyName">Company Name</string>
+    <string name="host">Host</string>
+    <string name="estd_dor">Estd.DOR</string>
+    <string name="home_txt_register_new_company">Register\nNew Company</string>
+    <string name="home_txt_view_company">View/Edit\nCompany</string>
+    <string name="home_txt_shortlist_students">Shortlist\nStudents</string>
+    <string name="logo_txt_roartek_solutions">RoarTek Solutions</string>
+    <string name="notifyMsg_txt_message">MESSAGE</string>
+    <string name="students">Students</string>
+    <string name="select_company">Select Company</string>
+    <string name="batch">Batch</string>
+    <string name="type">Type</string>
+    <string name="status">Status</string>
+    <string name="stats_students_stats">Student\nStats</string>
+    <string name="stats_company_stats">Company\nStats</string>
+    <string name="stats_monthly_stats">Monthly\nStats</string>
+    <string name="stats_yearly_stats">Yearly\nStats</string>
+    <string name="dialog_txt_home">Home</string>
+    <string name="notification">Notification</string>
+    <string name="dialog_txt_app_configuration">App\nConfigure</string>
+    <string name="logout">Logout</string>
+    <string name="my_profile">My Profile</string>
+    <string name="password">Password</string>
+    <string name="cgpa">CGPA</string>
+    <string name="arrears">Arrears</string>
+    <string name="x_per">X %</string>
+    <string name="xii_per">XII %</string>
+    <string name="placed">Placed</string>
+    <string name="diploma">Diploma</string>
+    <string name="label_details">DETAILS</string>
+    <string name="eligible">Eligible</string>
+    <string name="company">Company</string>
+    <string name="venue">Venue</string>
+    <string name="created_on">Created On</string>
+    <string name="last_modified">Last modified</string>
+    <string name="staff_name">Staff Name</string>
+    <string name="email">Email</string>
+    <string name="contact">Contact</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+
+    //menu
+    <string name="action_settings">Settings</string>
+    <string name="label_notify_students"><b>NOTIFY STUDENTS</b></string>
+
+    //type of recruitment
+    <string-array name="type_of_rec_array">
+        <item>On Campus</item>
+        <item>Off Campus</item>
+        <item>Pool</item>
+    </string-array>
+
+    //company status
+    <string-array name="company_status_array">
+        <item>Upcoming</item>
+        <item>Confirmed</item>
+    </string-array>
+
+    //shortlist tab headings
+    <string-array name="shortList_tab_heading">
+        <item>Criteria</item>
+        <item>Branches</item>
+    </string-array>
+
+    //userAccount tab headings
+    <string-array name="userAccount_tab_heading">
+        <item>My Profile</item>
+        <item>Password Change</item>
+    </string-array>
+
+    //statistics tab headings
+    <string-array name="statistics_tab_heading">
+        <item>OverView</item>
+        <item>Detailed View</item>
+    </string-array>
+
+    //Error Msgs
+    <string name="errorMsg_blank_field">*Blank field</string>
+
+
+    <string name="ic_action_photo">View photo</string>
+    <string name="ic_action_info">Photo Info</string>
+
+
+
+</resources>

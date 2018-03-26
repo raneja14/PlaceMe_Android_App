@@ -1,0 +1,14 @@
+<resources>>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="custom_dialog_theme" parent="@android:style/Theme.Translucent">
+        <item name="android:windowBackground">@color/transparent_black</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+</resources>
